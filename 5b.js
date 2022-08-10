@@ -2181,7 +2181,9 @@ function menuLevelCreator() {
 }
 
 function menuExitLevelCreator() {
+	if(Window.confirm("Are you sure you want to exit? Doing this will clear all tiles in the build space.")) {
 	menuScreen = 0;
+	}	
 }
 
 function menuExplore() {
